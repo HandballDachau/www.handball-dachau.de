@@ -1,0 +1,11 @@
+<?php
+$content   = array (
+  'isBrowserTriggerEnabled' => true,
+  'lastTrackerCronRun' => false,
+  'PrivacyManager.ipAnonymizerEnabled' => false,
+  'PrivacyManager.doNotTrackEnabled' => false,
+  'currentLocationProviderId' => 'default',
+);
+$expires_on   = 1445852336;
+$cache_complete   = true;
+?>

@@ -1,0 +1,134 @@
+body {
+    text-align: left;
+    background-color: #0099FF;
+    background-repeat: repeat-x;
+}
+
+
+table.berichte {
+    border-collapse: separate;
+    
+}
+
+table.berichte td {
+    background-color: #FFFFFF;
+        
+}
+
+.button {
+	padding: 3px;
+	text-decoration: none;
+	color: white;
+	border: 2px solid grey;
+	background-color: #B22222;
+}
+
+.menu  {
+	padding: 3px;
+	border: 2px solid grey;
+	background-color: #B22222;
+	transition-property: background-color;
+    transition-duration: 0.3s; 
+}
+
+.menu a {
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+
+.menu:hover { 
+	background-color: #FF3030;
+}
+
+.menu_active	{ 
+	padding: 3px;
+	border: 2px solid white;
+	background-color: #B22222;
+	transition-property: background-color;
+    transition-duration: 0.3s; 
+	font-weight: 800;
+}
+
+.menu_active a {
+	text-decoration: none;
+	color: white;
+	display: block;
+}
+               
+.tabelle {
+    width: 1063px;
+    height: 300px;
+    overflow: auto;
+}
+
+.v_tabelle {
+	width: 1142px;
+	height: 300px;
+	font-size: 12px;
+	overflow: auto;
+}
+
+table.tabellenkopf td {
+    background-color: #00BBFF;
+}
+
+table.tabellenkopf {
+    border-collapse: separate;
+}
+
+#time {
+    width: 170px;
+    text-align: center;
+}
+
+#team {
+    width: 120px;
+    text-align: center;
+}
+
+#gamedate {
+    width: 130px;
+    text-align: center;
+}
+
+#title {
+    width: 680px;
+    padding-left: 5px;
+}
+
+.v_name {
+	width: 120px;
+	padding-left: 5px;
+}
+
+.v_nr {
+	width: 18px;
+	text-align: center;
+}
+
+.v_alter {
+	width: 30px;
+	text-align: center;
+}
+
+.v_rest {
+	width: 170px;
+	padding-left: 5px;
+}
+
+.galerie_table {
+	border: 5px solid #0077DE;
+	transition-property: border;
+    transition-duration: 1s; 
+	-moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+}
+
+.galerie_table:hover {
+	border: 5px solid #FFFFFF;
+}
