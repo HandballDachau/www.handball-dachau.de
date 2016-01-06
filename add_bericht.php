@@ -35,7 +35,7 @@
 		}else{
 			$pp = '';
 		}
-		add_bericht($titel, $text, $gamedate, $pp);
+		$mysql->add_bericht($titel, $text, $gamedate, $pp);
 		header("Location: redakteur.php");
 	}
 ?>

@@ -8,7 +8,7 @@
 	}	else {
 		header('Location: teams.php');
 	}
-	$gegners = get_gegner($team);
+	$gegners = $mysql->get_gegner($team);
 ?>
 <!DOCTYPE html>
 <html>
@@ -44,7 +44,7 @@
 				<?php 
 					$html = '';
 					foreach($gegners as $gegner) {
-						$html .= '<a href = "'.$gegner[link].'" target="blank"><img class="gegner" src="bilder/logos/'.$gegner[logo].'.jpg">';
+						$html .= '<a href = "'.$gegner['link'].'" target="blank"><img class="gegner" src="bilder/logos/'.$gegner['logo'].'.jpg">';
 					}
 					echo $html;
 				?>

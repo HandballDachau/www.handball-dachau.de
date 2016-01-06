@@ -3,7 +3,7 @@
 	require('src/mysql.php');
 	include("src/navi.php");
 	include("src/hauptsponsoren.php");
-	$top = get_berichte('Top News', "7");
+	$top = $mysql->get_berichte('Top News', "7");
 ?>
 <!DOCTYPE html>
 <html>
@@ -82,7 +82,7 @@
 						} else {
 						$color = '#fff';
 						}
-						$bericht = get_newest($k);
+						$bericht = $mysql->get_newest($k);
 						
 						$html .= '<tr style="background-color: '.$color.'; font-weight: 800;">';
 						$html .= '<td id="newest_team_'.$c.'" style="font-size: 12px;"><a href="bericht.php?id='.$bericht['id'].'">'.$bericht['team'].$liga[$c].'</a></td>';
@@ -151,7 +151,7 @@
 						} else {
 						$color = '#fff';
 						}
-						$bericht = get_newest($k);
+						$bericht = $mysql->get_newest($k);
 						$html .= '<tr style="background-color: '.$color.'; font-weight: 800;">';
 						$html .= '<td><a href="bericht.php?id='.$bericht['id'].'">'.$k.'</a></td></tr>';
 						$html .= '<tr style="background-color: '.$color.';">';

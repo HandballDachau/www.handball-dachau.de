@@ -2,7 +2,7 @@
 	session_start();
 	require_once("src/mysql.php");
 	if(isset($_POST['sent']) && $_POST['sent']=="Login") {
-		if (login($_POST['team'], $_POST['pw']))
+		if ($mysql->login($_POST['team'], $_POST['pw']))
 		header('Location: redakteur.php');
 	}
 ?>

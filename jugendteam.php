@@ -5,8 +5,8 @@
 	include("src/subnavi.php");
 	if (isset($_GET['team'])) {
 		$team = $_GET['team'];
-		$user = get_user($team);
-		$trainer = get_trainer($team);
+		$user = $mysql->get_user($team);
+		$trainer = $mysql->get_trainer($team);
 	}	else {
 		header('Location: jugend.php');
 	}

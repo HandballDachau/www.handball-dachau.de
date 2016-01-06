@@ -4,13 +4,13 @@
 	require('src/auth.php');
 	
 	if(isset($_POST['id']) && isset($_POST['sent'])){
-		if(erase_bericht($_POST['id'])){
+		if($mysql->erase_bericht($_POST['id'])){
 			header('Location: redakteur.php');
 		}else{
-			echo mysql_error();
+			echo mysqli_error($mysql->getConnection());
 		}
-	}elseif(isset($_GET['id']) && ist_bericht($_GET['id'])) {
-		$bericht = get_bericht($_GET['id']);
+	}elseif(isset($_GET['id']) && $mysql->ist_bericht($_GET['id'])) {
+		$bericht = $mysql->get_bericht($_GET['id']);
 	}else{
 		header('Location: redakteur.php');
 	}

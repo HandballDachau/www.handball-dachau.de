@@ -4,13 +4,13 @@
 	require('src/auth.php');
 	
 	if(isset($_POST['id']) && isset($_POST['sent'])){
-		if(erase_spieler($_POST['id'])){
+		if($mysql->erase_spieler($_POST['id'])){
 			header('Location: verwaltung.php');
 		}else{
-			echo mysql_error();
+			echo mysqli_error($mysql->getConnection());
 		}
-	}elseif(isset($_GET['id']) && ist_spieler($_GET['id'])) {
-		$spieler = get_spieler1($_GET['id']);
+	}elseif(isset($_GET['id']) && $mysql->ist_spieler($_GET['id'])) {
+		$spieler = $mysql->get_spieler1($_GET['id']);
 	}else{
 		header('Location: verwaltung.php');
 	}

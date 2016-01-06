@@ -37,7 +37,7 @@
 		}else{
 			$pp = 'noname.jpg';
 		}
-		add_spieler($name, $nr, $jahr, $position, $so_far, $trophy, $goals, $hobbies, $pp);
+		$mysql->add_spieler($name, $nr, $jahr, $position, $so_far, $trophy, $goals, $hobbies, $pp);
 		header("Location: verwaltung.php");
 	}
 ?>

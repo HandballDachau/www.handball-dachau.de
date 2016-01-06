@@ -10,7 +10,7 @@
 			@unlink($pic);
 			header('Location: galerie_manager.php');
 		}else{
-			echo mysql_error();
+			echo mysqli_error($mysql->getConnection());
 		}
 	}
 	

@@ -5,7 +5,7 @@
 	include("src/subnavi.php");
 	if (isset($_GET['team'])) {
 		$team = $_GET['team'];
-		$sponsoren = get_sponsoren($team);
+		$sponsoren = $mysql->get_sponsoren($team);
 	}	else {
 		header('Location: teams.php');
 	}

@@ -5,9 +5,9 @@
 	include("src/subnavi.php");
 	if (isset($_GET['team'])) {
 		$team = $_GET['team'];
-		$user = get_user($team);
-		$trainer = get_trainer($team);
-		$spieler = get_spieler($team);
+		$user = $mysql->get_user($team);
+		$trainer = $mysql->get_trainer($team);
+		$spieler = $mysql->get_spieler($team);
 	}	else {
 		header('Location: teams.php');
 	}

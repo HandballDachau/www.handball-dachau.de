@@ -4,10 +4,10 @@
 	require('src/auth.php');
 	
 	if (isset($_GET['id'])) {
-		if(!ist_spieler($_GET['id'])){
+		if(!$mysql->ist_spieler($_GET['id'])){
 			header('Location: verwaltung.php');
 		}	else {
-			$spieler = get_spieler1($_GET['id']); 
+			$spieler = $mysql->get_spieler1($_GET['id']);
 		}
 	}	else {
 		header('Location: verwaltung.php');
@@ -113,10 +113,10 @@
 		}else{
 			$pp = $spieler['pic'];
 		}
-		if(edit_spieler($_GET['id'], $name, $nr, $jahr, $trophy, $goals, $position, $so_far, $hobbies, $pp)){
+		if($mysql->edit_spieler($_GET['id'], $name, $nr, $jahr, $trophy, $goals, $position, $so_far, $hobbies, $pp)){
 			header('Location: verwaltung.php');
 		}else{
-			print_r(mysql_error());
+			print_r(mysqli_error($mysql->getConnection()));
 		}
 	}
 ?>

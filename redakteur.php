@@ -4,7 +4,7 @@
 	include('src/navi_red.php');
 	$team = $_SESSION['team'];
 	
-	$berichte = get_berichte($team, '0');
+	$berichte = $mysql->get_berichte($team, '0');
 	
 ?>
 <!DOCTYPE html>

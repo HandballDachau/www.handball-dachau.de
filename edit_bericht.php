@@ -4,10 +4,10 @@
 	require('src/auth.php');
 	
 	if (isset($_GET['id'])) {
-		if(!ist_bericht($_GET['id'])){
+		if(!$mysql->ist_bericht($_GET['id'])){
 			header('Location: redakteur.php');
 		}	else {
-			$bericht = get_bericht($_GET['id']); 
+			$bericht = $mysql->get_bericht($_GET['id']);
 		}
 	}	else {
 		header('Location: redakteur.php');
@@ -61,10 +61,10 @@
 		}else{
 			$pp = $bericht['pic'];
 		}
-		if(edit_bericht($_POST['id'], $titel, $text, $gamedate, $pp)){
+		if($mysql->edit_bericht($_POST['id'], $titel, $text, $gamedate, $pp)){
 			header('Location: redakteur.php');
 		}else{
-			print_r(mysql_error());
+			print_r(mysqli_error($mysql->getConnection()));
 		}
 	}
 ?>
