@@ -16,8 +16,7 @@
 			$subs = array(	"Berichte" 	=>	"berichte.php?team=", 
 							"Tabelle"	=>	"tabelle.php?team=",
 							"Spielplan"	=>	"spielplan.php?team=",
-							"Galerie"	=>	"galerie.php?saison=1415&team=",
-							"Sponsoren"	=>	"sponsoren.php?team=");
+							"Galerie"	=>	"galerie.php?saison=1415&team=");
 			$team_path = 'jugendteam.php?team=';
 		}
 		

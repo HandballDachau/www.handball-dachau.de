@@ -16,6 +16,8 @@ if ($_SERVER['SERVER_NAME'] == 'local.handball-dachau.de') {
 // LIVE config
 } else {
 
+    error_reporting(0);
+
     define('DB_HOST', 'rdbms.strato.de');
     define('DB_NAME', 'DB1340654');
     define('DB_USER', 'U1340654');

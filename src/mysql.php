@@ -1,6 +1,6 @@
 <?php
 
-include_once('/config/config.php');
+include_once('config.php');
 
 /**
  * Mysql class
@@ -110,7 +110,8 @@ class mysql {
 	 */
 	public function escape($string)
 	{
-		return mysqli_real_escape_string($this->getConnection(), $string);
+		$escapedString = mysqli_real_escape_string($this->getConnection(), $string);
+		return '"' . $escapedString . '"';
 	}
 
 	// Setters and getters
@@ -438,7 +439,7 @@ class mysql {
 		if ($team=="alle") {
 			$sql = 'SELECT * FROM sponsoren ORDER BY id ASC';
 		} else {
-			$sql = 'SELECT * FROM sponsoren WHERE ' . $this->escape($team) . ' = 1 ORDER BY id ASC';
+			$sql = 'SELECT * FROM sponsoren WHERE ' . $team . ' = 1 ORDER BY id ASC';
 		}
 		$result = mysqli_query($this->getConnection(), $sql) or die (mysqli_error($this->getConnection()));
 		$i = 0;

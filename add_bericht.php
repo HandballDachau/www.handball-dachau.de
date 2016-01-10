@@ -4,20 +4,25 @@
 	require('src/auth.php');
 	
 	$e = 0;
-	if($_POST['titel']!=""){
+	if(!empty($_POST['titel'])){
 		$titel = htmlspecialchars($_POST['titel']);
 	}else{
 		$e = 1;
 		$titel = "";
 	}
-	if($_POST['text']!=""){
+	if(!empty($_POST['text'])){
 		$text = htmlspecialchars($_POST['text']);
 	}else{
 		$e = 2;
 		$text = "";
 	}
 	$allowedExts = array("jpeg", "jpg", "png", "JPEG", "JPG", "PNG");
-	$extension = end(explode(".", $_FILES["file"]["name"]));
+
+	$extension = '';
+	if (!empty($_FILES["file"]["name"])) {
+		$extension = end(explode(".", $_FILES["file"]["name"]));
+	}
+
 	if($extension!=''){
 		if (in_array($extension, $allowedExts)){
 			if($_FILES['file']['error'] > 0){
@@ -61,7 +66,7 @@
 		<p>Spieldatum:<br />
 		<input type="date" name="gamedate" /><label for="gamedate">(Nichts eintragen, falls Vorbericht oder nicht spielzugehörig)</label></p>
 		<p>Text:<br />
-		<textarea name="text" rows="25" cols="113"><?php echo $text; ?></textarea></p>
+		<textarea name="text" rows="25" cols="113"><?php echo $mysql->cleanHtml($text); ?></textarea></p>
 		<p>Foto: (falls vorhanden)<br />
 		<input type="file" name="file" id="file" size="50" maxlength="500000" accept="image/jpeg"><p>
 		<input type="submit" class="button" name="sent" value="Speichern" />

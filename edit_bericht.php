@@ -90,7 +90,7 @@
 		<p>Spieldatum:<br />
 		<input type="date" value="<?php echo $gamedate; ?>" name="gamedate" /><label for="gamedate">(Nichts eintragen, falls Vorbericht oder nicht spielzugehörig)</label></p>
 		<p>Text:<br />
-		<textarea name="text" rows="25" cols="113"><?php echo br2nl($text); ?></textarea></p>
+		<textarea name="text" rows="25" cols="113"><?php echo $mysql->br2nl($text); ?></textarea></p>
 		<input type="hidden" name="id" value="<?php echo $_GET['id']; ?>" />
 		<p>Bild: (falls vorhanden)<br />
 		<img src="<?php echo $bericht['pic']; ?>" width="100px" /><input type="file" name="file" id="file" size="50" maxlength="1048576" accept="image/jpeg"></p>

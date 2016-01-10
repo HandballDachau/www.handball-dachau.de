@@ -61,8 +61,8 @@
 		</div>
 		
 		<div id="inhalt">
-			<?php echo '<img src="bilder/hinweis.jpg" style="margin-top:5px; border: 2px solid black; width: 786px;">';?>
-			<?php echo '<img src="bilder/banner.jpg" style="margin-top:2px; border: 2px solid black; width: 786px;">';?>
+			<?php //echo '<img src="bilder/hinweis.jpg" style="margin-top:5px; border: 2px solid black; width: 786px;">';?>
+			<?php //echo '<img src="bilder/banner.jpg" style="margin-top:2px; border: 2px solid black; width: 786px;">';?>
 			<table style="border-collapse: collapse;">
 				<tr><td id="preview">
 					<div id="preview_content">
