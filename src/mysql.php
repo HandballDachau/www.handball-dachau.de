@@ -635,4 +635,4 @@ class mysql {
 }
 
 // Create instance of mysql connection once
-$mysql = new mysql(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME, 'utf-8');
+$mysql = new mysql(DB_HOST,DB_USER,DB_PASSWORD,DB_NAME, 'utf8');
