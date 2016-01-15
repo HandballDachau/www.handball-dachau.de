@@ -24,7 +24,7 @@
 
     <meta charset="UTF-8">
     <meta name="description" content="Handballer des ASV Dachau">
-	
+	<?php include('src/head.php'); ?>
 	<script src="src/jquery-1.10.2.min.js"></script>
 	<script src="src/lightbox-2.6.min.js"></script>
 	

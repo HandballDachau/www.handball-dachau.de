@@ -17,6 +17,7 @@
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">
 	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<?php include('src/head.php'); ?>
     <link href="src/style.css" type="text/css" rel="stylesheet">
 	<script>
 		var bericht_id = 0;
