@@ -27,8 +27,7 @@
 	<?php include('src/head.php'); ?>
 	<script src="src/jquery-1.10.2.min.js"></script>
 	<script src="src/lightbox-2.6.min.js"></script>
-	
-    <link href="src/style.css" type="text/css" rel="stylesheet">
+
 	<link href="src/lightbox.css" rel="stylesheet" />
 </head>
 

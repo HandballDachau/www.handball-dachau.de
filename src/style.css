@@ -11,7 +11,7 @@ body {
 	background-repeat: repeat-y;
 	background-position: center top;
 	background-color: #DDDDDD;
-	font-size: 1em;	
+	font-size: 1.5em;
 }
 
 header { 
@@ -233,6 +233,7 @@ table.navi td {
 .sub a {
 	text-decoration: none;
 	color: black;
+	font-size: 1.2em;
 	display: block;
 }
 

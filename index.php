@@ -11,14 +11,10 @@
 <head>
     <title>Handball Dachau</title>
 
-    <meta charset="UTF-8">
     <meta name="description" content="Handballer des ASV Dachau">
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">
-	<script src="http://code.jquery.com/jquery.min.js"></script>
+
 	<?php include('src/head.php'); ?>
-    <link href="src/style.css" type="text/css" rel="stylesheet">
+
 	<script>
 		var bericht_id = 0;
 		$(document).ready(function(){
