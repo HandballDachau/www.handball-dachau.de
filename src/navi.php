@@ -18,7 +18,7 @@
 	}
 ?>
 
-<nav class="navbar navbar-default navbar-static-top">
+<nav class="navbar navbar-default">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -28,7 +28,6 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-      <a class="navbar-brand" href="/"><img width="50" height="50" src="bilder/logos/asv_dachau.jpg" alt="Homepage"/></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -37,10 +36,6 @@
 		  <?php foreach ($sites as $name => $link) { ?>
 			  <li class="<?php echo isPageActive($name) ? 'active' : ''; ?>"><a href="<?php echo $link; ?>" title="<?php echo $name; ?>"><?php echo $name; ?></a></li>
 		  <?php } ?>
-      </ul>
-
-      <ul class="nav navbar-nav navbar-right">
-
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

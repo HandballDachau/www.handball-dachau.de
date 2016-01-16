@@ -28,9 +28,8 @@ $liga = array('Bayernliga','Landesliga','Bezirksoberliga','Bezirksliga','Bezirks
 			var preview_team = $('#newest_team_'+bericht_id).html();
 			var preview_titel = $('#newest_titel_'+bericht_id).html();
 			var preview_pic = $('#newest_pic_'+bericht_id).html();
-			var preview_gamedate = $('#newest_gamedate_'+bericht_id).html();
 			var preview_text= $('#newest_text_'+bericht_id).html().substr(0,200)+"...";
-			$("#preview_team").html(preview_team+' '+preview_gamedate);
+			$("#preview_team").html(preview_team);
 			$("#preview_titel").html(preview_titel);
 			$("#preview_gamedate").html(preview_team);
 			$("#preview_text").html(preview_text);
@@ -50,92 +49,93 @@ $liga = array('Bayernliga','Landesliga','Bezirksoberliga','Bezirksliga','Bezirks
 <body>
 
 <div class="container">
-	<header>
+	<header><a href="/" title="Home"><img src="../bilder/titel.jpg" alt=Banner ASV Dachau Handball" /></a>
 	</header>
 
 	<div id="main">
 		<?php include("src/navi.php"); ?>
-		<div id="hauptsponsoren">
+		<div id="hauptsponsoren" class="col-md-3 hidden-xs">
 			<?php echo hauptsponsoren(); ?>
 		</div>
 
-		<div id="inhalt">
+		<div id="inhalt" class="col-md-9">
 			<?php //echo '<img src="bilder/hinweis.jpg" style="margin-top:5px; border: 2px solid black; width: 786px;">';?>
 			<?php //echo '<img src="bilder/banner.jpg" style="margin-top:2px; border: 2px solid black; width: 786px;">';?>
-			<table style="border-collapse: collapse;">
-				<tr>
-					<td id="preview">
-						<div id="preview_content">
-							<p id="preview_team"></p>
-							<p id="preview_titel"></p>
-							<p id="preview_text"></p>
-						</div>
-					</td>
-					<td id="newest_teams">
 
-						<table class="table table-hover">
-							<?php foreach ($teamsAdults as $index => $team) {
-								$bericht = $mysql->get_newest($team);
-								?>
-								<tr>
-									<td>
+			<div class="col-md-6">
 
-										<strong><a href="bericht.php?id=<?php echo $bericht['id']; ?>"><?php echo $bericht['team'] . ' ' . $liga[$index] . (!empty($bericht['gamedate']) ? ' (' . $bericht['gamedate'] . ')' : ''); ?></a></strong>
-										<a href="bericht.php?id=<?php echo $bericht['id']; ?>"><?php echo $bericht['titel']; ?></a>
-										<div style="display: none;">
-											<span id="newest_pic_<?php echo $index; ?>"><?php echo $bericht['pic']; ?></span><span id="newest_text_<?php echo $index; ?>"><a href="bericht.php?id=<?php echo $bericht['id']; ?>"><?php echo $bericht['text']; ?></a></span>';
-										</div>
-									</td>
-								</tr>
-							<?php } ?>
-						</table>
-					</td>
-				</tr>
-			</table>
+				<div id="preview">
+					<div id="preview_content">
+						<p id="preview_team"></p>
+						<p id="preview_titel"></p>
+						<p id="preview_text"></p>
+					</div>
+				</div>
 
-			<div class="newest_top">
-				<h3 class="minibanner"> Top News </h3>
 			</div>
 
-			<div class="newest_youth" style="font-size: 16px;">
-				<h3 class="minibanner"> Jugendberichte </h3>
-			</div>
+			<div class="col-md-6">
 
-			<div class="newest_top">
-				<table class="table table-hover">
-					<?php foreach ($top as $bericht) { ?>
-						<tr>
-							<td>
+				<div>
 
-								<strong><a href="bericht.php?id=<?php echo $bericht['id']; ?>"><?php echo $bericht['titel']; ?></a></strong>
-								<a href="bericht.php?id=<?php echo $bericht['id']; ?>"><?php echo mb_substr($bericht['text'], 0, 70) . '...'; ?></a>
-							</td>
-						</tr>
-					<?php } ?>
-					<tr>
-						<td>
-							<a href="berichte.php?team=Top News">Archiv</a>
-						</td>
-					</tr>
-				</table>
-			</div>
-
-			<div class="newest_youth">
-				<table class="table table-hover">
-					<?php foreach ($teamsKids as $index => $team) {
-						$bericht = $mysql->get_newest($team);
+					<table class="table table-striped">
+						<?php foreach ($teamsAdults as $index => $team) {
+							$bericht = $mysql->get_newest($team);
 						?>
 						<tr>
 							<td>
 
-								<strong><a href="bericht.php?id=<?php echo $bericht['id']; ?>"><?php echo $team; ?></a></strong>
+								<strong><a id="newest_team_<?php echo $index; ?>" href="bericht.php?id=<?php echo $bericht['id']; ?>"><?php echo $bericht['team'] . ' ' . $liga[$index] . (!empty($bericht['gamedate']) ? ' (' . $bericht['gamedate'] . ')' : ''); ?></a></strong>
 								<a href="bericht.php?id=<?php echo $bericht['id']; ?>"><?php echo $bericht['titel']; ?></a>
+								<div style="display: none;">
+									<div id="newest_titel_<?php echo $index; ?>"<span id="newest_titel_<?php echo $index; ?>"><a href="bericht.php?id=<?php echo $bericht['id']; ?>"><?php echo $bericht['titel']; ?></a><span></span></div><span id="newest_pic_<?php echo $index; ?>"><?php echo $bericht['pic']; ?></span><span id="newest_text_<?php echo $index; ?>"><a href="bericht.php?id=<?php echo $bericht['id']; ?>"><?php echo $bericht['text']; ?></a></span>
+								</div>
+
 							</td>
 						</tr>
-					<?php } ?>
-				</table>
+						<?php } ?>
+					</table>
+				</div>
+
 			</div>
-			<footer>
+
+		<div class="col-md-8">
+			<h3 class="minibanner"> Top News </h3>
+			<table class="table table-hover">
+				<?php foreach ($top as $bericht) { ?>
+					<tr>
+						<td>
+
+							<strong><a href="bericht.php?id=<?php echo $bericht['id']; ?>"><?php echo $bericht['titel']; ?></a></strong>
+							<a href="bericht.php?id=<?php echo $bericht['id']; ?>"><?php echo mb_substr($bericht['text'], 0, 70) . '...'; ?></a>
+						</td>
+					</tr>
+				<?php } ?>
+				<tr>
+					<td>
+						<a href="berichte.php?team=Top News">Archiv</a>
+					</td>
+				</tr>
+			</table>
+		</div>
+
+		<div class="col-md-4">
+			<h3 class="minibanner"> Jugendberichte </h3>
+			<table class="table table-hover">
+				<?php foreach ($teamsKids as $index => $team) {
+					$bericht = $mysql->get_newest($team);
+					?>
+					<tr>
+						<td>
+
+							<strong><a href="bericht.php?id=<?php echo $bericht['id']; ?>"><?php echo $team; ?></a></strong>
+							<a href="bericht.php?id=<?php echo $bericht['id']; ?>"><?php echo $bericht['titel']; ?></a>
+						</td>
+					</tr>
+				<?php } ?>
+			</table>
+		</div>
+			<footer class="col-md-12">
 				<a href="impressum.php">Impressum</a>
 
 				<!-- Piwik -->

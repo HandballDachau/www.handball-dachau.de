@@ -2,6 +2,8 @@
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <script src="http://code.jquery.com/jquery.min.js"></script>
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="src/css/bootstrap.min.css">
