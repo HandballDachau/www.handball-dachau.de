@@ -40,7 +40,9 @@
 				Heftl vom 24.-25.10.15 <a href="heftl/heftl_2425_10_15.pdf" target="blank">(DOWNLOAD)</a><br />
 				Heftl vom 14.-15.11.15 <a href="heftl/heftl_1415_11_15.pdf" target="blank">(DOWNLOAD)</a><br />
 				Heftl vom 28.-29.11.15 <a href="heftl/heftl_2829_11_15.pdf" target="blank">(DOWNLOAD)</a><br />
-				Heftl vom 12.-13.12.15 <a href="heftl/heftl_1213_12_15.pdf" target="blank">(DOWNLOAD)</a>
+				Heftl vom 12.-13.12.15 <a href="heftl/heftl_1213_12_15.pdf" target="blank">(DOWNLOAD)</a><br />
+				Heftl vom 09.-10.01.16 <a href="heftl/heftl_0910_01_16.pdf" target="blank">(DOWNLOAD)</a><br />
+				Heftl vom 16.-17.01.16 <a href="heftl/heftl_1617_01_16.pdf" target="blank">(DOWNLOAD)</a>
 			</div>
 		</div>
 	
