@@ -28,7 +28,7 @@
 			<span class="icon-bar"></span>
 			<span class="icon-bar"></span>
 		</button>
-      <a class="navbar-brand" href="/"><img src="bilder/logos/asv_dachau.jpg" alt="Homepage"/></a>
+      <a class="navbar-brand" href="/"><img width="50" height="50" src="bilder/logos/asv_dachau.jpg" alt="Homepage"/></a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->

@@ -1,7 +1,7 @@
 <?php
 	//session_start();
 	require('src/mysql.php');
-	include("src/navi.php");
+
 	include("src/hauptsponsoren.php");
 ?>
 <!DOCTYPE html>
@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="description" content="Handballer des ASV Dachau">
 
-    <link href="src/style.css" type="text/css" rel="stylesheet">
+	<?php include("src/head.php"); ?>
 </head>
 
 
@@ -23,7 +23,7 @@
 	</header>
 	
 	<div id="main">
-	
+		<?php include("src/navi.php"); ?>
 		<div id="hauptsponsoren">
 			<?php echo hauptsponsoren(); ?>
 		</div>

@@ -1,7 +1,6 @@
 ﻿<?php
 //session_start();
 require('src/mysql.php');
-include("src/navi.php");
 include("src/hauptsponsoren.php");
 $top = $mysql->get_berichte('Top News', '7');
 $teamsKids = array('Weibliche A', 'Männliche A', 'Weibliche B', 'Männliche B', 'Weibliche C', 'Männliche C', 'Männliche D', 'Männliche E', 'Minis');
@@ -55,7 +54,7 @@ $liga = array('Bayernliga','Landesliga','Bezirksoberliga','Bezirksliga','Bezirks
 	</header>
 
 	<div id="main">
-
+		<?php include("src/navi.php"); ?>
 		<div id="hauptsponsoren">
 			<?php echo hauptsponsoren(); ?>
 		</div>

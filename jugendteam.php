@@ -1,7 +1,7 @@
 <?php
 	//session_start();
 	require('src/mysql.php');
-	include("src/navi.php");
+
 	include("src/subnavi.php");
 	if (isset($_GET['team'])) {
 		$team = $_GET['team'];
@@ -29,7 +29,7 @@
 	</header>
 	
 	<div id="main">
-	
+		<?php include("src/navi.php"); ?>
 		<div id="hauptsponsoren">
 			<?php echo make_subnavi(0, $team, ""); ?>
 		</div>

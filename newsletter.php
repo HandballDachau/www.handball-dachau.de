@@ -1,7 +1,7 @@
 <?php
 	//session_start();
 	require('src/mysql.php');
-	include("src/navi.php");
+
 	include("src/hauptsponsoren.php");
 ?>
 <!DOCTYPE html>
@@ -23,7 +23,7 @@
 	</header>
 	
 	<div id="main">
-	
+		<?php include("src/navi.php"); ?>
 		<div id="hauptsponsoren">
 			<?php echo hauptsponsoren(); ?>
 		</div>

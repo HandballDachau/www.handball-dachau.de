@@ -1,7 +1,7 @@
 <?php
 	//session_start();
 	require('src/mysql.php');
-	include("src/navi.php");
+
 	include("src/subnavi.php");
 	if (isset($_GET['team'])) {
 		$team = $_GET['team'];
@@ -15,7 +15,6 @@
 
 <head>
     <title>Handball Dachau</title>
-
     <meta charset="UTF-8">
     <meta name="description" content="Handballer des ASV Dachau">
 	<?php include('src/head.php'); ?>
@@ -28,7 +27,7 @@
 	</header>
 	
 	<div id="main">
-	
+		<?php include("src/navi.php"); ?>
 		<div id="hauptsponsoren">
 			<?php 
 				$a = array("Damen 1","Damen 2","Damen 3","Damen 4","Herren 1","Herren 2","Herren 3", "Herren 4");
