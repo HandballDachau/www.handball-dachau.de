@@ -23,8 +23,6 @@
 	
 	<div id="main">
 	
-		<?php echo make_navi("Spielplan"); ?>
-	
 		<div id="hauptsponsoren">
 			<?php echo hauptsponsoren(); ?>
 		</div>

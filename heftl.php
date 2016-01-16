@@ -24,8 +24,6 @@
 	
 	<div id="main">
 	
-		<?php echo make_navi("Heftl"); ?>
-	
 		<div id="hauptsponsoren">
 			<?php echo hauptsponsoren(); ?>
 		</div>

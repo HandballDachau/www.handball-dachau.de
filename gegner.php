@@ -29,8 +29,6 @@
 	
 	<div id="main">
 	
-		<?php echo make_navi(""); ?>
-	
 		<div id="hauptsponsoren">
 			<?php echo make_subnavi(1, $team, "Gegner"); ?>
 		</div>

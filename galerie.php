@@ -39,8 +39,6 @@
 	
 	<div id="main">
 	
-		<?php echo make_navi(""); ?>
-	
 		<div id="hauptsponsoren">
 			<?php 
 				$a = array("Damen 1","Damen 2","Damen 3","Damen 4","Herren 1","Herren 2","Herren 3", "Herren 4");

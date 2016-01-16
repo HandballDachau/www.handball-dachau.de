@@ -30,8 +30,6 @@
 	
 	<div id="main">
 	
-		<?php echo make_navi("Jugend"); ?>
-	
 		<div id="hauptsponsoren">
 			<?php echo make_subnavi(0, $team, ""); ?>
 		</div>

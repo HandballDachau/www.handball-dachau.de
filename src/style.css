@@ -7,9 +7,6 @@ html, body {
 
 body {
 	text-align: center;
-	background-image: url(/bilder/hintergrund.jpg);
-	background-repeat: repeat-y;
-	background-position: center top;
 	background-color: #DDDDDD;
 	font-size: 1.5em;
 }
@@ -70,6 +67,7 @@ footer a {
 	padding-left: 2px;
 	padding-right: 2px;
 	padding-bottom: 20px;
+	background: #FFF;
 }
 
 #inhalt {
@@ -79,6 +77,7 @@ footer a {
 	padding-left: 2px;
 	text-align: left;
 	padding-bottom: 20px;
+	background: #FFF;
 }
 
 #kontakt_tabelle td {
@@ -614,6 +613,11 @@ p.srsLaden {
     border-top-right-radius: 4px;
 }
 
-
-
-
+/* Bootstrap desgin overwrites */
+.navbar-brand {
+	padding: 0;
+}
+.navbar-brand img {
+	width: 50px;
+	height: 50px;
+}
