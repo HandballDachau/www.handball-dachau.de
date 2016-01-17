@@ -16,10 +16,10 @@
 <html>
 
 <head>
-    <title>Handball Dachau</title>
+    <title>Mannschaft <?php echo $team; ?> - Handball Dachau</title>
 
     <meta charset="UTF-8">
-    <meta name="description" content="Handballer des ASV Dachau">
+    <meta name="description" content="<?php echo $team; ?> der Handballer des ASV Dachau">
 	<?php include('src/head.php'); ?>
 </head>
 

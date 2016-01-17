@@ -15,7 +15,7 @@
 <html>
 
 <head>
-    <title>Handball Dachau</title>
+    <title>Jugendmannschaft <?php echo $team; ?> - Handball Dachau</title>
 
     <meta charset="UTF-8">
     <meta name="description" content="Handballer des ASV Dachau">

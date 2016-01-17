@@ -622,6 +622,11 @@ p.srsLaden {
 }
 
 /* Bootstrap desgin overwrites */
+
+.btn {
+	margin: 10px 0;
+}
+
 .navbar-brand {
 	padding: 0;
 }
