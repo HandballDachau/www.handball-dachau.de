@@ -32,45 +32,40 @@
 		
 			<h3 class="minibanner">Jugend</h3>
 			<p></p>
-			<table class="teamtabelle">
-				<tr>
-					<td>Männliche A-Jugend</td>
-					<td style="width: 50px;"></td>
-					<td>Weibliche A-Jugend ASV/HCD</td>
-				</tr><tr>
-					<td><a href="http://handball-dachau.de/jugendteam.php?team=Männliche%20A"><img src="bilder/teams/Männliche A_300.jpg"></a></td>
-					<td></td>
-					<td><a href="http://handball-dachau.de/jugendteam.php?team=Weibliche%20A"><img src="bilder/teams/Weibliche A_300.jpg"></a></td>
-					</tr><tr style="height: 30px;"></tr><tr>
-					<td>Männliche B-Jugend</td>
-					<td></td>
-					<td>Weibliche B-Jugend</td>
-				</tr><tr>
-					<td><a href="http://handball-dachau.de/jugendteam.php?team=Männliche%20B"><img src="bilder/teams/Männliche B_300.jpg"></a></td>
-					<td></td>
-					<td><a href="http://handball-dachau.de/jugendteam.php?team=Weibliche%20B"><img src="bilder/teams/Weibliche B_300.jpg"></a></td>
-				</tr><tr style="height: 30px;"></tr><tr>
-					<td>Männliche C-Jugend</td>
-					<td></td>
-					<td>Weibiche C-Jugend</td>
-				</tr><tr>
-					<td><a href="http://handball-dachau.de/jugendteam.php?team=Männliche%20C"><img src="bilder/teams/Männliche C_300.jpg"></a></td>
-					<td></td>
-					<td><a href="http://handball-dachau.de/jugendteam.php?team=Weibliche%20C"><img src="bilder/teams/Weibliche C_300.jpg"></a></td>
-				</tr><tr style="height: 30px;"></tr><tr>
-					<td>Männliche D-Jugend</td>
-					<td></td>
-					<td>Minis</td>
-				</tr><tr>
-					<td><a href="http://handball-dachau.de/jugendteam.php?team=Männliche%20D"><img src="bilder/teams/Männliche D_300.jpg"></a></td>
-					<td></td>
-					<td><a href="http://handball-dachau.de/jugendteam.php?team=Minis"><img src="bilder/teams/Minis_300.jpg"></a></td>
-				</tr><tr style="height: 30px;"></tr><tr>
-					<td>Männliche E-Jugend</td>
-				</tr><tr>
-					<td><a href="http://handball-dachau.de/jugendteam.php?team=Männliche%20E"><img src="bilder/teams/Männliche E_300.jpg"></a></td>
-				</tr>
-			</table>
+			<div id="team-images" class="col-md-12">
+				<div class="col-md-6">
+					<div class="team-header">Männliche A-Jugend</div>
+					<a href="http://handball-dachau.de/jugendteam.php?team=Männliche%20A"><img src="bilder/teams/Männliche A_300.jpg"></a>
+				</div>
+				<div class="col-md-6">
+					<div class="team-header">Weibliche A-Jugend ASV/HCD</div>
+					<a href="http://handball-dachau.de/jugendteam.php?team=Weibliche%20A"><img src="bilder/teams/Weibliche A_300.jpg"></a>
+				</div>
+				<div class="col-md-6">
+					<div class="team-header">Männliche B-Jugend</div>
+					<a href="http://handball-dachau.de/jugendteam.php?team=Männliche%20B"><img src="bilder/teams/Männliche B_300.jpg"></a>
+				</div>
+				<div class="col-md-6">
+					<div class="team-header">Weibliche B-Jugend</div>
+					<a href="http://handball-dachau.de/jugendteam.php?team=Weibliche%20B"><img src="bilder/teams/Weibliche B_300.jpg"></a>
+				</div>
+				<div class="col-md-6">
+					<div class="team-header">Männliche C-Jugend</div>
+					<a href="http://handball-dachau.de/jugendteam.php?team=Männliche%20C"><img src="bilder/teams/Männliche C_300.jpg"></a>
+				</div>
+				<div class="col-md-6">
+					<div class="team-header">Weibiche C-Jugend</div>
+					<a href="http://handball-dachau.de/jugendteam.php?team=Weibliche%20C"><img src="bilder/teams/Weibliche C_300.jpg"></a>
+				</div>
+				<div class="col-md-6">
+					<div class="team-header">Minis</div>
+					<a href="http://handball-dachau.de/jugendteam.php?team=Minis"><img src="bilder/teams/Minis_300.jpg"></a>
+				</div>
+				<div class="col-md-6">
+					<div class="team-header">Männliche D-Jugend</div>
+					<a href="http://handball-dachau.de/jugendteam.php?team=Männliche%20D"><img src="bilder/teams/Männliche D_300.jpg"></a>
+				</div>
+			</div>
 			<p></p>
 			
 		</div>

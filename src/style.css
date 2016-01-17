@@ -22,7 +22,7 @@ header {
 }
 
 header img {
-	width: 300px;
+	width: 100%;
 }
 
 footer {
@@ -158,12 +158,12 @@ table.navi td {
 }
 
 #team-images img {
-	width: 280px;
+	width: 270px;
 }
 
 #team-images .team-header {
 	background: #296EDB;
-	width: 300px;
+	width: 270px;
 	color: #FFF;
 	margin: 10px auto 0px auto;
 }
