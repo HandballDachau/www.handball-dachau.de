@@ -379,7 +379,7 @@ class mysql {
 		$sql = 'SELECT *, DATE_FORMAT(datetime, "%d.%m.%Y um %T") AS datetime FROM kommentare WHERE berichtid = ' . (int)$bericht_id . ' ORDER BY id ASC';
 		$result = mysqli_query($this->getConnection(), $sql) or die (mysqli_error($this->getConnection()));
 		$i = 0;
-		$kommentare = [];
+		$kommentare = array();
 
 		if (mysqli_num_rows($result) > 0){
 			while($kommentar = mysqli_fetch_assoc($result)){
