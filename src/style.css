@@ -322,25 +322,26 @@ table.navi td {
 }
 
 #preview_titel {
-	width: 320px;
+	background-color: #545454;
+	display: block;
+	height: auto;
 	margin-left: 10px;
 	margin-right: 100px;
-	height: 26px;
-	background-color: #545454;
 	margin-top: -10px;
-	padding-left: 10px;
-	padding-right: 10px;
+	padding: 0 10px 5px 10px;
 	text-decoration: none;
-	display: block;
+	width: 270px;
 }
 
 #preview_titel a {
 	text-decoration: none;
 	color: #FFFFFF;
+	line-height: 14px;
+	font-size: 14px;
 }
 
 #preview_text {
-	width: 320px;
+	width: 270px;
 	background-color: #000000;
 	margin-left: 10px;
 	margin-top: -16px;
@@ -652,6 +653,10 @@ p.srsLaden {
 	}
 	#team-images .team-header {
 		width: 350px;
+	}
+	#preview_text,
+	#preview_title {
+		width: 270px;
 	}
 }
 
