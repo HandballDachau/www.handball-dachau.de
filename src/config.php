@@ -55,7 +55,7 @@ function log_exception( Exception $e ) {
         print "</table></div>";
     } else {
         //echo 'Es ist ein Fehler aufgetreten, bitte versuchen Sie es später noch einmal.';
-        mail('nzseokiwi@gmail.com', 'Error auf www.handball-dachau.de', $messag);
+        mail('nzseokiwi@gmail.com', 'Error auf www.handball-dachau.de', $message);
     }
 
     exit();
