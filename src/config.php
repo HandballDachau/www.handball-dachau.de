@@ -54,8 +54,8 @@ function log_exception( Exception $e ) {
         print "<tr style='background-color:rgb(240,240,240);'><th>Line</th><td>{$e->getLine()}</td></tr>";
         print "</table></div>";
     } else {
-        echo 'Es ist ein Fehler aufgetreten, bitte versuchen Sie es später noch einmal.';
-        mail('nzseokiwi@gmail.com', 'Error auf www.handball-dachau.de', $e->getMessage());
+        //echo 'Es ist ein Fehler aufgetreten, bitte versuchen Sie es später noch einmal.';
+        mail('nzseokiwi@gmail.com', 'Error auf www.handball-dachau.de', $messag);
     }
 
     exit();
