@@ -1,7 +1,7 @@
 <?php
 	//session_start();
 	require('src/mysql.php');
-	include("src/navi.php");
+
 	include("src/subnavi.php");
 	if (isset($_GET['team'])) {
 		$team = $_GET['team'];
@@ -18,25 +18,22 @@
 
     <meta charset="UTF-8">
     <meta name="description" content="Handballer des ASV Dachau">
-
-    <link href="src/style.css" type="text/css" rel="stylesheet">
+	<?php include('src/head.php'); ?>
 </head>
 
 
 <body>
 
-	<header>
+	<div class="container"><header><a href="/" title="Home"><img src="../bilder/titel.jpg" alt=Banner ASV Dachau Handball" /></a>
 	</header>
 	
 	<div id="main">
-	
-		<?php echo make_navi(""); ?>
-	
-		<div id="hauptsponsoren">
+		<?php include("src/navi.php"); ?>
+		<div id="hauptsponsoren" class="col-md-3" class="col-md-3">
 			<?php echo make_subnavi(1, $team, "Gegner"); ?>
 		</div>
 		
-		<div id="inhalt">
+		<div id="inhalt" class="col-md-9">
 		
 			<h3 class="minibanner"> Gegner </h3>
 		
@@ -53,9 +50,9 @@
 	
 	</div>
 	
-	<footer>
+	<footer class="col-md-12">
 		<a href="impressum.php">Impressum</a>
 	</footer>
-	
+	</div>
 </body>
 </html>

@@ -1,7 +1,7 @@
 <?php
 	//session_start();
 	require('src/mysql.php');
-	include("src/navi.php");
+
 	include("src/subnavi.php");
 	if (isset($_GET['team'])) {
 		$team = $_GET['team'];
@@ -14,25 +14,21 @@
 <html>
 
 <head>
-    <title>Handball Dachau</title>
-
+    <title>Sponsoren - Handball Dachau</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Handballer des ASV Dachau">
-
-    <link href="src/style.css" type="text/css" rel="stylesheet">
+    <meta name="description" content="Sponsoren der Handballer des ASV Dachau">
+	<?php include('src/head.php'); ?>
 </head>
 
 
 <body>
 
-	<header>
+	<div class="container"><header><a href="/" title="Home"><img src="../bilder/titel.jpg" alt=Banner ASV Dachau Handball" /></a>
 	</header>
 	
 	<div id="main">
-	
-		<?php echo make_navi(""); ?>
-	
-		<div id="hauptsponsoren">
+		<?php include("src/navi.php"); ?>
+		<div id="hauptsponsoren" class="col-md-3" class="col-md-3">
 			<?php 
 				$a = array("Damen 1","Damen 2","Damen 3","Damen 4","Herren 1","Herren 2","Herren 3", "Herren 4");
 				if($team == "Top News"){
@@ -45,7 +41,7 @@
 			?>
 		</div>
 		
-		<div id="inhalt">
+		<div id="inhalt" class="col-md-9">
 		
 			<h3 class="minibanner"> Sponsoren </h3>
 		
@@ -69,9 +65,9 @@
 	
 	</div>
 	
-	<footer>
+	<footer class="col-md-12">
 		<a href="impressum.php">Impressum</a>
 	</footer>
-	
+	</div>
 </body>
 </html>

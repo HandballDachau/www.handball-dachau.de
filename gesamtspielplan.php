@@ -1,7 +1,7 @@
 <?php
 	//session_start();
 	require('src/mysql.php');
-	include("src/navi.php");
+
 	include("src/hauptsponsoren.php");
 ?>
 <!DOCTYPE html>
@@ -12,25 +12,22 @@
 
     <meta charset="UTF-8">
     <meta name="description" content="Handballer des ASV Dachau">
-
-    <link href="src/style.css" type="text/css" rel="stylesheet">
+	<?php include('src/head.php'); ?>
 </head>
 
 
 <body>
 
-	<header>
+	<div class="container"><header><a href="/" title="Home"><img src="../bilder/titel.jpg" alt=Banner ASV Dachau Handball" /></a>
 	</header>
 	
 	<div id="main">
-	
-		<?php echo make_navi("Spielplan"); ?>
-	
-		<div id="hauptsponsoren">
+		<?php include("src/navi.php"); ?>
+		<div id="hauptsponsoren" class="col-md-3 hidden-xs" class="col-md-3">
 			<?php echo hauptsponsoren(); ?>
 		</div>
 		
-		<div id="inhalt">
+		<div id="inhalt" class="col-md-9">
 		
 			<h3 class="minibanner"> Spielplan </h3>
 		
@@ -44,9 +41,9 @@
 	
 	</div>
 	
-	<footer>
+	<footer class="col-md-12">
 		<a href="impressum.php">Impressum</a>
 	</footer>
-	
+	</div>
 </body>
 </html>

@@ -5,33 +5,31 @@ html, body {
 	margin: 0px;
 }
 
+h1, h2, h3 ,h4 {
+	margin-top: 0px;
+}
+
 body {
 	text-align: center;
-	background-image: url(/bilder/hintergrund.jpg);
-	background-repeat: repeat-y;
-	background-position: center top;
 	background-color: #DDDDDD;
-	font-size: 1em;	
+	font-size: 1.5em;
 }
 
 header { 
 	margin: 0px auto;
-	height: 220px;
-	width: 1000px;
-	background-image: url(../bilder/titel.jpg);
-	background-position: center top;
-	background-repeat: no-repeat;
+	height: auto;
+	width: 100%;
+}
+
+header img {
+	width: 100%;
 }
 
 footer {
-	text-align: left;
-	position: fixed;
-	bottom: 0px;
-	left: 50%;
-	margin-left: -500px;
-	background-color: #296EDB;
-	width: 990px;
-    padding-left: 10px;
+	background: #296edb;
+	width: auto;
+	height: 25px;
+	text-align: center;
 }
 
 footer a {
@@ -41,7 +39,7 @@ footer a {
 
 #main {
 	margin: 0px auto;
-	width: 1000px;
+	width: auto;
 }
 
 #werbung {
@@ -64,21 +62,12 @@ footer a {
 
 #hauptsponsoren {
 	margin: 0px;
-	padding-top: 5px;
-	float: left;
-	width: 202px;
-	padding-left: 2px;
-	padding-right: 2px;
-	padding-bottom: 20px;
+	background: none;
 }
 
 #inhalt {
-	float: right;
-	width: 790px;
-	padding-right: 2px;
-	padding-left: 2px;
 	text-align: left;
-	padding-bottom: 20px;
+	background: #FFF none repeat scroll 0% 0%;
 }
 
 #kontakt_tabelle td {
@@ -93,20 +82,18 @@ footer a {
 }
 
 .minibanner {
-	margin: 5px 0px;
-	background: rgb(32,124,202); /* Old browsers */
-	background: -moz-radial-gradient(center, ellipse cover,  rgba(32,124,202,1) 0%, rgba(30,87,153,1) 100%); /* FF3.6+ */
-	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(32,124,202,1)), color-stop(100%,rgba(30,87,153,1))); /* Chrome,Safari4+ */
-	background: -webkit-radial-gradient(center, ellipse cover,  rgba(32,124,202,1) 0%,rgba(30,87,153,1) 100%); /* Chrome10+,Safari5.1+ */
-	background: -o-radial-gradient(center, ellipse cover,  rgba(32,124,202,1) 0%,rgba(30,87,153,1) 100%); /* Opera 12+ */
-	background: -ms-radial-gradient(center, ellipse cover,  rgba(32,124,202,1) 0%,rgba(30,87,153,1) 100%); /* IE10+ */
-	background: radial-gradient(ellipse at center,  rgba(32,124,202,1) 0%,rgba(30,87,153,1) 100%); /* W3C */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#207cca', endColorstr='#1e5799',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	margin: 0px;
+	background: #296EDB;
 	color: #FFFFFF;
 	font-weight: 800;
 	font-family: century gothic;
 	text-align: left;
-	padding-left: 10px;
+	padding: 3px 3px 3px 10px;
+	border-right: 1px solid #FFF;
+}
+
+.full-width {
+	width: 100%;
 }
 
 .menu  {
@@ -166,6 +153,21 @@ table.navi td {
 	Border: 3px #296EDB solid;
 }
 
+#team-images {
+	text-align: center;
+}
+
+#team-images img {
+	width: 270px;
+}
+
+#team-images .team-header {
+	background: #296EDB;
+	width: 270px;
+	color: #FFF;
+	margin: 10px auto 0px auto;
+}
+
 #newest_teams {
 	background-color: #BBBBBB;
 	border: 2px black solid;
@@ -216,11 +218,12 @@ table.navi td {
 }
 
 #subnavi {
-	width: 200px; 
-	margin-left: -38px;
-	margin-top: 20px;
+	background: #FFF none repeat scroll 0% 0%;
+	width: 200px;
+	padding: 10px 0 10px 35px;
 	text-align: left;
 	font-family: century gothic;
+	border-radius: 5px;
 }
 
 .sub  {
@@ -233,6 +236,7 @@ table.navi td {
 .sub a {
 	text-decoration: none;
 	color: black;
+	font-size: 1.2em;
 	display: block;
 }
 
@@ -297,15 +301,16 @@ table.navi td {
 	background-repeat: no-repeat; 
 	background-position: center; 
 	background-size: auto 100%;
-	border: 2px black solid;
-	width: 460px;
+	border: 1px solid #FFF;
+	width: auto;
 }
 
 #preview_team {
-	margin-left: 30px;
+	width: 200px;
+	margin-left: 10px;
 	padding-left: 10px;
 	padding-right: 10px;
-	background-color: #296EDB;
+	background-color: #FFF;
 	margin-top: 150px;
 	margin-right: 250px;
 	display: block;
@@ -317,24 +322,28 @@ table.navi td {
 }
 
 #preview_titel {
-	margin-left: 50px;
-	margin-right: 100px;
 	background-color: #545454;
-	margin-top: -16px;
-	padding-left: 10px;
-	padding-right: 10px;
-	text-decoration: none;
 	display: block;
+	height: auto;
+	margin-left: 10px;
+	margin-right: 100px;
+	margin-top: -10px;
+	padding: 0 10px 5px 10px;
+	text-decoration: none;
+	width: 270px;
 }
 
 #preview_titel a {
 	text-decoration: none;
 	color: #FFFFFF;
+	line-height: 14px;
+	font-size: 14px;
 }
 
 #preview_text {
+	width: 270px;
 	background-color: #000000;
-	margin-left: 50px;
+	margin-left: 10px;
 	margin-top: -16px;
 	margin-right: 50px;
 	padding: 2px;
@@ -540,7 +549,7 @@ table.navi2 a	{
 
 .srsTable {
 	font-size: 12px; 
-	width: 768px;
+	width: 100%;
 	border-spacing:1px; 
 	border-collapse: collapse;
 }
@@ -613,6 +622,57 @@ p.srsLaden {
     border-top-right-radius: 4px;
 }
 
+/* Bootstrap desgin overwrites */
 
+.btn {
+	margin: 10px 0;
+}
 
+.navbar-brand {
+	padding: 0;
+}
+.navbar-brand img {
+	width: 50px;
+	height: 50px;
+}
 
+.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-xs-1, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9 {
+	padding: 0;
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	header img {
+		width: 700px;
+	}
+	#hauptsponsoren {
+		display: none;
+	}
+	#team-images img {
+		width: 350px;
+	}
+	#team-images .team-header {
+		width: 350px;
+	}
+	#preview_text,
+	#preview_title {
+		width: 270px;
+	}
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	header img {
+		width: 900px;
+	}
+	#hauptsponsoren {
+		display: block;
+	}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+	header img {
+		width: 1135px;
+	}
+}
