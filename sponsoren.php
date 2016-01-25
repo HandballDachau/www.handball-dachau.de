@@ -53,11 +53,13 @@
 				<?php
 					$html= '';
 					$c = 0;
-					foreach($sponsoren as $sponsor) {
-						$html .= '<a href="'.$sponsor['link'].'"><img style="margin: 1px; border: 1px solid black;" src="bilder/sponsoren/'.$sponsor['name'].'.jpg"></a>';
-						$c++;
-						if ($c%2==0) {
-							$html .= '<br />';
+					if (!empty($sponsoren)) {
+						foreach ($sponsoren as $sponsor) {
+							$html .= '<a href="' . $sponsor['link'] . '"><img style="margin: 1px; border: 1px solid black;" src="bilder/sponsoren/' . $sponsor['name'] . '.jpg"></a>';
+							$c++;
+							if ($c % 2 == 0) {
+								$html .= '<br />';
+							}
 						}
 					}
 					echo $html;

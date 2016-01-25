@@ -531,6 +531,9 @@ class mysql {
 	 * @return string
 	 */
 	public function get_gegner($team){
+		$sql = '';
+		$gegners = array();
+
 		switch($team) {
 			case "Herren 1": $sql = 'SELECT * FROM gegner WHERE herren1 = 1'; break;
 			case "Herren 2": $sql = 'SELECT * FROM gegner WHERE herren2 = 1'; break;
@@ -541,16 +544,20 @@ class mysql {
 			case "Damen 3": $sql = 'SELECT * FROM gegner WHERE damen3 = 1'; break;
 			case "Damen 4": $sql = 'SELECT * FROM gegner WHERE damen4 = 1'; break;
 		}
-		$result = mysqli_query($this->getConnection(), $sql) or die (mysqli_error($this->getConnection()));
-		$i = 0;
-		if(mysqli_num_rows($result) > 0){
-			while($gegner = mysqli_fetch_assoc($result)){
-				$gegners[$i] = $gegner;
-				$i++;
+
+		if (!empty($sql)) {
+
+			$result = mysqli_query($this->getConnection(), $sql) or die (mysqli_error($this->getConnection()));
+			$i = 0;
+			if (mysqli_num_rows($result) > 0) {
+				while ($gegner = mysqli_fetch_assoc($result)) {
+					$gegners[$i] = $gegner;
+					$i++;
+				}
 			}
-		}else{
-			$gegners = 'leer';
+
 		}
+
 		return $gegners;
 	}
 

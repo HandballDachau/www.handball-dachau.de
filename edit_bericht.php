@@ -35,7 +35,11 @@
 		$text = $bericht['text'];
 	}
 	$allowedExts = array("jpeg", "jpg", "png", "JPEG", "JPG", "PNG");
-	$extension = end(explode(".", $_FILES["file"]["name"]));
+	$extension = '';
+	if (!empty($_FILES["file"]["name"])) {
+		$extension = end(explode(".", $_FILES["file"]["name"]));
+	}
+
 	if($extension!=''){
 		if (in_array($extension, $allowedExts)){
 			if($_FILES['file']['error'] > 0){
