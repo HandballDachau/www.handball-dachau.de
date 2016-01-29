@@ -10,7 +10,6 @@
 <head>
     <title>Handball Dachau - Newsletter</title>
 
-    <meta charset="UTF-8">
     <meta name="description" content="Newsletter der Handballer des ASV Dachau">
 
 	<?php include('src/head.php'); ?>

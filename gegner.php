@@ -16,7 +16,6 @@
 <head>
     <title>Handball Dachau</title>
 
-    <meta charset="UTF-8">
     <meta name="description" content="Handballer des ASV Dachau">
 	<?php include('src/head.php'); ?>
 </head>

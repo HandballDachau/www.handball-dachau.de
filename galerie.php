@@ -22,7 +22,6 @@
 <head>
     <title>Fotogalerie - Handball Dachau</title>
 
-    <meta charset="UTF-8">
     <meta name="description" content="Fotogallerie der Handballer des ASV Dachau">
 	<?php include('src/head.php'); ?>
 	<script src="src/jquery-1.10.2.min.js"></script>
