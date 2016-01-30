@@ -5,6 +5,7 @@
 		"Teams"				=> "teams.php",
 		"Jugend"			=> "jugend.php",
 		"Spielplan"			=> "gesamtspielplan.php",
+		"Flyer"				=> "flyer.php",
 		"Kontakt"		 	=> "kontakt.php",
 		"Historie"			=> "historie.php",
 		"Sponsoring"		=> "sponsoring.php",
