@@ -69,6 +69,14 @@ footer a {
 	text-align: left;
 	background: #FFF none repeat scroll 0% 0%;
 }
+#inhalt .text {
+	padding: 10px;
+}
+
+#inhalt .text .thumb {
+	width: 150px;
+}
+
 
 #kontakt_tabelle td {
 	padding: 2px 5px;
