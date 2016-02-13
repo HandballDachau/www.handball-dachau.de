@@ -66,7 +66,7 @@ $liga = array('Bayernliga','Landesliga','Bezirksoberliga','Bezirksliga','Bezirks
 				<a href="bilder/events/lohi-turnier-2016-big.png" class="pull-right thumbnail" target="_blank" title="1. Lohi Handball Spielfest">
 					<img src="bilder/events/lohi-turnier-2016-thumb.png" class="thumb" alt="1. Lohi Handball Spielfest" />
 				</a>
-				wir laden Euch herzlich zu unserem Handballspielfest ein.<br />
+				wir laden Euch herzlich zu unserem Handballspielfest am <strong>Samstag den 12.06.2016</strong> ein.<br />
 				Das Turnier wird gemeinsam vom ASV Dachau, dem TuS Fürstenfeldbruck und dem HCD Gröbenzell organisiert. Die Lohnsteuerhilfe Bayern e.V. unterstützt das Turnier freundlicherweise als Sponsor.
 				Die Spiele der Minis und Bambinis werden von 10:00 – 14:00 Uhr und die der E-Jugend von 14:00 – 18:00 Uhr in der Halle ausgetragen. Das heißt das Turnier findet bei jedem Wetter statt.
 				Zwischen den Spielen ist für ein abwechslungsreiches Rahmenprogramm gesorgt. Die Teilnahmegebühr beträgt 10 € pro Mannschaft.<br />
